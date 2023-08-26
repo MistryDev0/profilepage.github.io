@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Bricolage+Grotesque:opsz,wght@10..48,600&family=Caprasimo&family=Josefin+Sans:ital,wght@1,700&family=Poppins:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'ADLaM Display', cursive;
+
+
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    margin: 10px;
+    animation: slidtop 1s ease forwards;
+    animation-delay: 0.5s;
+
+
+}
+
+.logo:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan, 0 0 300px cyan;
+    cursor: grab;
+}
+
+
+
+ul {
+    display: flex;
+
+}
+
+ul li {
+    list-style: none;
+    padding: 20px;
+
+}
+
+a.nav-link {
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 4px;
+    padding-left: 4px;
+    animation: slidtop 1s ease forwards;
+    animation-delay: 0.5s;
+
+
+}
+
+a.nav-link:hover {
+    border-radius: 20px;
+    border: 2px solid cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+    background-color: cyan;
+    transition: 0.1ms;
+    color: black;
+
+}
+
+.boxx {
+    position: absolute;
+    margin-top: 60px;
+    width: 450px;
+    height: 700px;
+    border-radius: 23px;
+    background: #000000;
+}
+
+.boxx .lines {
+    position: absolute;
+    inset: 0;
+    width: 457px;
+    height: 610px;
+    background: #ff3c7b;
+    border-radius: 23px;
+    overflow: hidden;
+
+}
+
+.boxx .lines::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 400px;
+    background: linear-gradient(transparent, #45f3ff, #45f3ff, #45f3ff, transparent);
+    animation: anime 4s linear infinite;
+}
+
+
+.boxx .lines::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: 23px;
+    background: #292929;
+}
+
+
+div#leftside {
+    width: 70%;
+    margin: 45px;
+    padding: 9% 5%;
+}
+
+div#leftside .name {
+    /* font-size: 3em; */
+    position: relative;
+    width: auto;
+    color: aliceblue;
+    animation: slidbottom 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.big {
+    font-size: 3.2rem;
+    margin: 0;
+    padding: 0;
+    animation: slidright 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+
+
+div#rightside {
+
+    width: 450px;
+    height: 400px;
+    position: relative;
+    margin: 10% 5%;
+    background: #000000;
+    transition: 0.5s;
+    border-radius: 50%;
+    animation: slidtop 1s ease forwards;
+    animation-delay: 0.7s;
+}
+
+#rightside .lines {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: #000;
+    overflow: hidden;
+}
+
+#rightside .lines::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    background: linear-gradient(transparent, #45f3ff, #45f3ff, #45f3ff, transparent);
+    animation: anime 4s linear infinite;
+
+}
+
+
+
+#rightside .lines::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 3px;
+    background: #000000;
+}
+
+
+.r-img {
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    z-index: 21;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    animation: colors 2s ease infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-delay: 0.7s;
+}
+.r-img:hover{
+    cursor: pointer;
+}
+
+main.ss {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+span.text {
+    color: rgb(85, 77, 172);
+}
+
+p {
+    color: white;
+    animation: slidright 1s ease forwards;
+    animation-delay: .7s;
+
+}
+
+.contect i {
+    padding: 5px;
+    margin: 10px 0px;
+    margin-right: 8px;
+    font-size: 1.5rem;
+    color: cyan;
+    border: 2px solid cyan;
+    border-radius: 50%;
+}
+
+.contect i:hover {
+    color: #000;
+    background: cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.butn button {
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
+    border-radius: 23px;
+    background: transparent;
+    font-weight: bold;
+    border: 2px solid cyan;
+    width: 200px;
+    font-size: 1.2rem;
+    padding: 4px;
+    animation: slidright 1s ease forwards;
+    animation-delay: 0.7s;
+}
+
+.butn i {
+    padding: 0 5px;
+}
+
+.butn button:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+    background-color: cyan;
+    transition: 0.1ms;
+    color: black;
+}
+
+
+
+
+@media (max-width:500px) {
+    main.ss {
+        height: 100%;
+    }
+
+    .r-img {
+        display: none;
+    }
+
+    div#rightside {
+        display: none;
+    }
+
+    div#leftside {
+        padding: 12% 0;
+        margin: 60px;
+        height: 87%;
+    }
+
+    .boxx {
+        width: 381px;
+    }
+
+    .boxx .lines {
+        width: 387px;
+        height: 605px;
+    }
+
+}
+
+
+/* Animation - 1 */
+
+@keyframes anime {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+
+    }
+
+}
+
+/* Animation - 2 */
+
+@keyframes slidright {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+
+    }
+
+}
+
+/* Animation - 3 */
+
+@keyframes slidleft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* Animation - 3 */
+
+@keyframes slidbottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+
+}
+
+/* Animation - 4 */
+
+@keyframes slidtop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+
+}
+
+
+@keyframes slidtop1 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+
+    }
+
+}
+
+
+/* lines animation */
+
+@keyframes anime {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+
+    }
+
+}
+
+@keyframes colors {
+    0% {
+        box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+        animation-duration: 0.1s;
+        animation-delay: 1s;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #ff3c7b, 0 0 25px #ff3c7b, 0 0 50px #ff3c7b, 0 0 100px #ff3c7bed, 0 0 200px #ff3c7b;
+        animation-duration: 0.1s;
+        animation-delay: 1s;
+    }
+
+}
